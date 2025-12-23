@@ -7,6 +7,17 @@ import FadeIn from "./FadeIn";
 
 const projects = [
   {
+    id: "spotjott",
+    name: "SpotJott",
+    title: "SpotJott Cloud Journal",
+    desc: "A personal and secured cloud journal platform featuring both public and private journaling. Includes social features like discovery feeds, comments, stories, and real-time notifications, creating a unique blend of privacy and community.",
+    image: "/images/spotjott.png",
+    stack: "Next.js • Cloud • Full Stack",
+    year: "2024",
+    link: "https://spotjott.com",
+    status: "Live",
+  },
+  {
     id: "menofculture",
     name: "Men of Culture",
     title: "Men of Culture Website",

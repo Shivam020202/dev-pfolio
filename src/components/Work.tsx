@@ -6,6 +6,13 @@ import FadeIn from "./FadeIn";
 
 const projects = [
   {
+    title: "SpotJott",
+    tech: "Next.js, Cloud Journal, Full Stack",
+    image: "/images/spotjott.png",
+    link: "https://spotjott.com",
+    status: "Live",
+  },
+  {
     title: "Men of Culture Website",
     tech: "Next.js, Tailwind CSS, Frontend",
     image:
