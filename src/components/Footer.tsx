@@ -222,11 +222,14 @@ export default function Footer() {
               </div>
 
               <div className={styles.contactInfo}>
+                <a href="tel:+917717346504" className={styles.emailLink}>
+                  +91 77173 46504
+                </a>
                 <a
-                  href="mailto:hello@devgroup.com"
+                  href="mailto:jindalk2004@gmail.com"
                   className={styles.emailLink}
                 >
-                  hello@devgroup.com
+                  jindalk2004@gmail.com
                 </a>
               </div>
             </div>
