@@ -49,10 +49,10 @@ export default function Footer() {
           <div className={styles.leftSection}>
             <div className={styles.branding}>
               <h2 className={styles.logo}>
-                <span className={styles.logoAccent}>Dev</span>Group
+                <span className={styles.logoMetal}>TDM</span>
               </h2>
               <p className={styles.tagline}>
-                Crafting digital experiences that inspire
+                The Digital Nomads — Crafting digital experiences that inspire
               </p>
             </div>
 
@@ -246,11 +246,10 @@ export default function Footer() {
         <div className={styles.bottomBar}>
           <div className={styles.copyright} suppressHydrationWarning>
             <span className={styles.copyrightSymbol}>©</span>
-            {year ?? ""} DevGroup. All rights reserved.
+            {year ?? ""} TDM (The Digital Nomads). All rights reserved.
           </div>
           <div className={styles.madeWith}>
-            Crafted with <span className={styles.heart}>♥</span> in San
-            Francisco
+            Crafted with <span className={styles.heart}>♥</span> in India
           </div>
         </div>
       </div>

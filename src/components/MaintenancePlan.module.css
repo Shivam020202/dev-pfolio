@@ -1,0 +1,194 @@
+.section {
+  padding: 3rem 0;
+  background-color: var(--bg-secondary);
+  position: relative;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mainTitle {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.gradient {
+  background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.description {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 500px;
+}
+
+.pricingHighlight {
+  display: inline-flex;
+  padding: 1.5rem 2rem;
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  margin: 0.5rem 0;
+}
+
+.pricingText {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.pricingLabel {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.pricingAmount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.pricingUnit {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+}
+
+.rightColumn {
+  display: flex;
+  justify-content: center;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.featureCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.featureCard:hover {
+  border-color: rgba(16, 185, 129, 0.3);
+  background: rgba(16, 185, 129, 0.03);
+}
+
+.featureIcon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.featureContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.featureTitle {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.featureDescription {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Benefits Bar */
+.benefitsBar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.benefit {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.benefitIcon {
+  color: #10b981;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .leftColumn {
+    text-align: center;
+    align-items: center;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .benefitsBar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}

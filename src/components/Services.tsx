@@ -19,6 +19,13 @@ const services = [
     tag: "Mobile",
   },
   {
+    title: "AI & ML Solutions",
+    description:
+      "Intelligent applications powered by machine learning, computer vision, and NLP technologies.",
+    icon: "🤖",
+    tag: "Artificial Intelligence",
+  },
+  {
     title: "Legacy Integration",
     description:
       "Supporting and modernizing legacy systems (PHP, ASP.NET, Java Enterprise). We bridge the gap.",
@@ -32,26 +39,53 @@ const services = [
     icon: "☁️",
     tag: "DevOps",
   },
+  {
+    title: "UI/UX Design",
+    description:
+      "Stunning interfaces with intuitive user experiences. From wireframes to pixel-perfect designs.",
+    icon: "🎨",
+    tag: "Design",
+  },
 ];
 
 export default function Services() {
   return (
     <section className={styles.section} id="services">
       <FadeIn className="container">
-        <h2 className="text-secondary text-sm uppercase tracking-[0.2em] mb-2">
-          Our Expertise
-        </h2>
-        <h3 className="text-4xl font-bold mb-4">
-          Comprehensive Tech Solutions
-        </h3>
+        <div className={styles.header}>
+          <span className={styles.badge}>
+            <span className={styles.badgeDot}></span>
+            What We Do
+          </span>
+          <h2 className={styles.title}>
+            Our <span className={styles.gradient}>Expertise</span>
+          </h2>
+          <p className={styles.subtitle}>
+            Full-stack development capabilities spanning modern and legacy
+            technologies
+          </p>
+        </div>
 
         <div className={styles.grid}>
           {services.map((service, index) => (
-            <div key={index} className={`glass-panel ${styles.card}`}>
-              <div className={styles.icon}>{service.icon}</div>
-              <h4 className={styles.title}>{service.title}</h4>
-              <p className={styles.description}>{service.description}</p>
-              <span className={styles.legacy_tag}>{service.tag}</span>
+            <div
+              key={index}
+              className={styles.card}
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className={styles.cardNumber}>
+                {String(index + 1).padStart(2, "0")}
+              </div>
+              <div className={styles.iconWrapper}>
+                <span className={styles.icon}>{service.icon}</span>
+              </div>
+              <div className={styles.cardContent}>
+                <h4 className={styles.cardTitle}>{service.title}</h4>
+                <p className={styles.description}>{service.description}</p>
+                <span className={styles.tag}>{service.tag}</span>
+              </div>
+              <div className={styles.cardGlow}></div>
+              <div className={styles.cardBorder}></div>
             </div>
           ))}
         </div>

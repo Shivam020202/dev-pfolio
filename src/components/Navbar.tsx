@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <div className={`container ${styles.inner}`}>
         <Link href="/" className={styles.logo}>
-          DEV<span className="text-blue-500">GROUP</span>
+          <span className={styles.logoMetal}>TDM</span>
         </Link>
 
         <div className={styles.navLinks}>
@@ -22,7 +22,7 @@ export default function Navbar() {
         </div>
 
         <Link href="#contact">
-          <button className={`sharp-btn ${styles.cta}`}>Let's Talk</button>
+          <button className={`sharp-btn ${styles.cta}`}>Let&apos;s Talk</button>
         </Link>
       </div>
     </nav>
