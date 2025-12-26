@@ -102,10 +102,15 @@ export default function UIRetouch() {
             <div className={styles.stateBox}>
               <span className={styles.stateLabel}>After</span>
               <div className={styles.stateVisual}>
-                <div className={styles.newUI}>
-                  <div className={styles.newBlock}></div>
-                  <div className={styles.newBlock}></div>
-                  <div className={styles.newBlock}></div>
+                <div className={styles.bentoGrid}>
+                  <div
+                    className={`${styles.bentoBlock} ${styles.bentoLarge}`}
+                  ></div>
+                  <div className={styles.bentoBlock}></div>
+                  <div className={styles.bentoBlock}></div>
+                  <div
+                    className={`${styles.bentoBlock} ${styles.bentoWide}`}
+                  ></div>
                 </div>
               </div>
             </div>

@@ -185,21 +185,42 @@
   border: 1px dashed rgba(255, 255, 255, 0.1);
 }
 
-.newUI {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+/* Bento Grid for "After" Visual */
+.bentoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 4px;
   width: 100%;
+  height: 100%;
 }
 
-.newBlock {
-  height: 16px;
+.bentoBlock {
   background: linear-gradient(
-    90deg,
+    135deg,
     rgba(245, 158, 11, 0.5) 0%,
     rgba(239, 68, 68, 0.4) 100%
   );
-  border: 1px solid rgba(245, 158, 11, 0.3);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.bentoLarge {
+  grid-row: span 2;
+}
+
+.bentoWide {
+  grid-column: span 2;
+}
+
+.stateBox:last-child:hover .bentoBlock {
+  background: linear-gradient(
+    135deg,
+    rgba(245, 158, 11, 0.7) 0%,
+    rgba(239, 68, 68, 0.6) 100%
+  );
+  border-color: rgba(245, 158, 11, 0.6);
 }
 
 .arrow {
